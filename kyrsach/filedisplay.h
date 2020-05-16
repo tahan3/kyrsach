@@ -15,7 +15,7 @@
 
 using namespace std;
 
-class FileDisplay //: public QMainWindow
+class FileDisplay
 {
 public:
     QMainWindow *window;
@@ -26,6 +26,5 @@ private:
     QString fileToString();
     char* FILE_NAME;
     QLabel *info;
-    QMessageBox *msg;
 };
 #endif // FILEDISPLAY_H

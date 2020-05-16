@@ -36,7 +36,6 @@ class Menu : public QMainWindow
 {
     Q_OBJECT
 private:
-    QPushButton *hostnameBtn;
     QListWidget *list;
 private slots:
     void showInfo();

@@ -51,148 +51,148 @@ void Menu::showInfo(){
     switch(r){
     case HOSTNAME:{
         FindInfo infoFinder;
-        infoFinder.createThread("hostname.txt","hostname>hostname.txt");
-        FileDisplay *info = new FileDisplay("hostname.txt");
+        infoFinder.createThread("hostname","hostname>hostname");
+        FileDisplay *info = new FileDisplay("hostname");
         info->window->show();
     }
         break;
     case HARDWARE_INFO:{
         FindInfo infoFinder;
-        infoFinder.createThread("hardware.txt","sudo lshw -short>hardware.txt");
-        FileDisplay *info = new FileDisplay("hardware.txt");
+        infoFinder.createThread("hardware","sudo lshw -short>hardware");
+        FileDisplay *info = new FileDisplay("hardware");
         info->window->show();
     }
         break;
     case CPU_INFO:{
         FindInfo infoFinder;
-        infoFinder.createThread("cpu.txt","lscpu>cpu.txt");
-        FileDisplay *info = new FileDisplay("cpu.txt");
+        infoFinder.createThread("cpu","lscpu>cpu");
+        FileDisplay *info = new FileDisplay("cpu");
         info->window->show();
     }
         break;
     case MEM_INFO:{
         FindInfo infoFinder;
-        infoFinder.createThread("meminfo.txt","less /proc/meminfo>meminfo.txt");
-        FileDisplay *info = new FileDisplay("meminfo.txt");
+        infoFinder.createThread("meminfo","less /proc/meminfo>meminfo");
+        FileDisplay *info = new FileDisplay("meminfo");
         info->window->show();
     }
         break;
     case SWAP_INFO:{
         FindInfo infoFinder;
-        infoFinder.createThread("swapinfo.txt","cat /proc/swaps>swapinfo.txt");
-        FileDisplay *info = new FileDisplay("swapinfo.txt");
+        infoFinder.createThread("swapinfo","cat /proc/swaps>swapinfo");
+        FileDisplay *info = new FileDisplay("swapinfo");
         info->window->show();
     }
         break;
     case DISTRIB_INFO:{
         FindInfo infoFinder;
-        infoFinder.createThread("distribinfo.txt","lsb_release -a>distribinfo.txt");
-        FileDisplay *info = new FileDisplay("distribinfo.txt");
+        infoFinder.createThread("distribinfo","lsb_release -a>distribinfo");
+        FileDisplay *info = new FileDisplay("distribinfo");
         info->window->show();
     }
         break;
     case KERNEL_VERSION:{
         FindInfo infoFinder;
-        infoFinder.createThread("kernelversion.txt","uname -a>kernelversion.txt");
-        FileDisplay *info = new FileDisplay("kernelversion.txt");
+        infoFinder.createThread("kernelversion","uname -a>kernelversion");
+        FileDisplay *info = new FileDisplay("kernelversion");
         info->window->show();
     }
         break;
     case HARD_DISK_INFO:{
         FindInfo infoFinder;
-        infoFinder.createThread("diskinfo.txt","sudo fdisk -l>diskinfo.txt");
-        FileDisplay *info = new FileDisplay("diskinfo.txt");
+        infoFinder.createThread("diskinfo","sudo fdisk -l>diskinfo");
+        FileDisplay *info = new FileDisplay("diskinfo");
         info->window->show();
     }
         break;
     case UNIT_INFORMATION:{
         FindInfo infoFinder;
-        infoFinder.createThread("unitinfo.txt","lsblk>unitinfo.txt");
-        FileDisplay *info = new FileDisplay("unitinfo.txt");
+        infoFinder.createThread("unitinfo","lsblk>unitinfo");
+        FileDisplay *info = new FileDisplay("unitinfo");
         info->window->show();
     }
         break;
     case DISK_SPACE:{
         FindInfo infoFinder;
-        infoFinder.createThread("diskspace.txt","df>diskspace.txt");
-        FileDisplay *info = new FileDisplay("diskspace.txt");
+        infoFinder.createThread("diskspace","df>diskspace");
+        FileDisplay *info = new FileDisplay("diskspace");
         info->window->show();
     }
         break;
     case USB_INFO:{
         FindInfo infoFinder;
-        infoFinder.createThread("usbinfo.txt","lsusb>usbinfo.txt");
-        FileDisplay *info = new FileDisplay("usbinfo.txt");
+        infoFinder.createThread("usbinfo","lsusb>usbinfo");
+        FileDisplay *info = new FileDisplay("usbinfo");
         info->window->show();
     }
         break;
     case PCI_INFORMATION:{
         FindInfo infoFinder;
-        infoFinder.createThread("pciinfo.txt","lspci>pciinfo.txt");
-        FileDisplay *info = new FileDisplay("pciinfo.txt");
+        infoFinder.createThread("pciinfo","lspci>pciinfo");
+        FileDisplay *info = new FileDisplay("pciinfo");
         info->window->show();
     }
         break;
     case UPTIME:{
         FindInfo infoFinder;
-        infoFinder.createThread("uptime.txt","uptime>uptime.txt");
-        FileDisplay *info = new FileDisplay("uptime.txt");
+        infoFinder.createThread("uptime","uptime>uptime");
+        FileDisplay *info = new FileDisplay("uptime");
         info->window->show();
     }
         break;
     case BOOT_HISTORY:{
         FindInfo infoFinder;
-        infoFinder.createThread("bootstory.txt","last reboot>bootstory.txt");
-        FileDisplay *info = new FileDisplay("bootstory.txt");
+        infoFinder.createThread("bootstory","last reboot>bootstory");
+        FileDisplay *info = new FileDisplay("bootstory");
         info->window->show();
     }
         break;
     case KERNEL_MODULES:{
         FindInfo infoFinder;
-        infoFinder.createThread("kernelmodules.txt","lsmod>kernelmodules.txt");
-        FileDisplay *info = new FileDisplay("kernelmodules.txt");
+        infoFinder.createThread("kernelmodules","lsmod>kernelmodules");
+        FileDisplay *info = new FileDisplay("kernelmodules");
         info->window->show();
     }
         break;
     case SOCKET_INFORMATION:{
         FindInfo infoFinder;
-        infoFinder.createThread("socket.txt","ss>socket.txt");
-        FileDisplay *info = new FileDisplay("socket.txt");
+        infoFinder.createThread("socket","ss>socket");
+        FileDisplay *info = new FileDisplay("socket");
         info->window->show();
     }
         break;
     case SERVICE_INFORMATION:{
         FindInfo infoFinder;
-        infoFinder.createThread("serviceinfo.txt","service --status-all>serviceinfo.txt");
-        FileDisplay *info = new FileDisplay("serviceinfo.txt");
+        infoFinder.createThread("serviceinfo","service --status-all>serviceinfo");
+        FileDisplay *info = new FileDisplay("serviceinfo");
         info->window->show();
     }
         break;
     case USERS_INFO:{
         FindInfo infoFinder;
-        infoFinder.createThread("usersinfo.txt","getent passwd>usersinfo.txt");
-        FileDisplay *info = new FileDisplay("usersinfo.txt");
+        infoFinder.createThread("usersinfo","getent passwd>usersinfo");
+        FileDisplay *info = new FileDisplay("usersinfo");
         info->window->show();
     }
         break;
     case GROUP_INFORMATION:{
         FindInfo infoFinder;
-        infoFinder.createThread("groupinfo.txt","less /etc/group>groupinfo.txt");
-        FileDisplay *info = new FileDisplay("groupinfo.txt");
+        infoFinder.createThread("groupinfo","less /etc/group>groupinfo");
+        FileDisplay *info = new FileDisplay("groupinfo");
         info->window->show();
     }
         break;
     case INSTALLED_PACKAGES:{
         FindInfo infoFinder;
-        infoFinder.createThread("packagesinfo.txt","dpkg -l>packagesinfo.txt");
-        FileDisplay *info = new FileDisplay("packagesinfo.txt");
+        infoFinder.createThread("packagesinfo","dpkg -l>packagesinfo");
+        FileDisplay *info = new FileDisplay("packagesinfo");
         info->window->show();
     }
         break;
     case FIREWALL_INFORMATION:{
         FindInfo infoFinder;
-        infoFinder.createThread("firewall.txt","sudo iptables -L -n -v>firewall.txt");
-        FileDisplay *info = new FileDisplay("firewall.txt");
+        infoFinder.createThread("firewall","sudo iptables -L -n -v>firewall");
+        FileDisplay *info = new FileDisplay("firewall");
         info->window->show();
     }
         break;

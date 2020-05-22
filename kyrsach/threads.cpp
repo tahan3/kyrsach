@@ -3,6 +3,7 @@
 void *threadWriteFile(void *param){
     struct print_parms* p = (struct print_parms*)param;
     FILE* stream=fopen(p->FILE_NAME,"w+");
+    if(stream==NULL) exit(-1);
     stream = popen(p->FILE_COMMAND,"r");
     fclose(stream);
 }
